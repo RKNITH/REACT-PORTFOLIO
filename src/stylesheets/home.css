@@ -1,0 +1,91 @@
+.introduction{
+    height:100vh;
+    width:100%;
+    background-position: 100% 100%;
+    background-size: cover;
+    
+}
+.introduction p{
+    color: white;
+}
+.introduction div h1{
+     font-weight: bold;
+     color: rgba(255, 255, 255, 0.466);
+     font-size: 100px;
+}
+.introduction div h1:hover{
+   color: white;
+   cursor: default;
+   text-shadow: 0px 0px 10px #fff;
+}
+.primary-button{
+    background-color:white;
+    height:45px;
+    border-radius:25px;
+    border:none;
+    width: 50%;
+}
+
+.primary-button a{
+    text-decoration:none;
+    color: black;
+}
+
+.devstack{
+    color: black;
+    transition:all 0.5s;
+    padding: 10px;
+}
+.devstack:hover{
+    color: white;
+    background-color:#001220;
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+
+.who-is-sathya{
+    background-size: 100% 100%;
+    height: 75vh;
+    color:white;
+    transition: all 0.5s;
+    overflow: none !important;
+}
+/* .who-is-sathya:hover{
+   transform: scale(1.05);
+   overflow: none !important;
+} */
+pre{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+
+
+@media(max-width:750px){
+    .introduction div h1{
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.466);
+        font-size: 75px;
+   }
+  
+   .primary-button{
+    background-color:white;
+    height:45px;
+    border-radius:25px;
+    border:none;
+    width: auto;
+    padding: 5px 15px;
+}
+
+.who-is-sathya{
+    background-size: 200% 100%;
+    height: 100vh;
+    color:white;
+    background-position: center;
+}
+pre{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif !important;
+}
+}

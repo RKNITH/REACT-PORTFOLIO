@@ -1,0 +1,240 @@
+.projects-intro .primary-button{
+    background-color: blue;
+    color: white !important;
+    font-weight: bold;
+}
+.projects-btn a{
+    color: white !important;;
+}
+.projects-list{
+    overflow:hidden;
+}
+.project{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    border-radius:10px;
+    margin-top: 50px;
+    animation: project-animation 10s linear infinite;
+}
+.project img{
+    height: 220px;
+    width:100%;
+}
+
+.project:hover > .project-content{
+    opacity: 1;
+    transform:scale(1.05);
+    cursor:pointer;
+}
+.project:hover{
+    animation-play-state: paused;
+}
+
+.project-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+.courses-intro{
+    height: 100vh;
+    background-size: cover;
+    background-position: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.courses-intro-content{
+    width: 50%;
+    color: white;
+    border-left: 5px solid cyan;
+    padding-left: 30px;
+    animation: courses-intro-animation 10s linear infinite;
+}
+.courses-intro-content h1{
+    font-size: 75px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: cyan;
+    border-bottom: 2px solid white;
+}
+
+.courses-intro-content p{
+   
+    border-right: 2px solid white;
+}
+.why-shey-parent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.why-shey{
+    height: 300px;
+    width: 300px;
+    background-color: #001220;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.why-shey:hover{
+    transform:scale(1.5);
+    background-color:#EBECF0 !important;
+    background: #EBECF0  !important;
+    box-shadow: 5px 5px 0px #cacbce, -5px -5px 0px #ffffff !important;
+    color: black;
+    font-weight: bold !important;
+}
+
+.why-shey:hover > h1{
+    display: none;
+}
+
+.why-shey:hover > .why-shey-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-shey h1{
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.why-shey-content{
+    display: none;
+}
+
+
+
+.courses-list{
+    overflow:hidden;
+}
+.course{
+    
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    border-radius:10px;
+    margin-top: 50px;
+    animation: project-animation 10s linear infinite;
+}
+.course img{
+    height: 220px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.course:hover > .course-content{
+    opacity: 1;
+    transform:scale(1.05);
+    cursor:pointer;
+}
+.course:hover{
+    animation-play-state: paused;
+}
+
+.course-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+
+@media(max-width:750px){
+
+    .courses-intro-content{
+        width: 100%;
+        color: white;
+        border-left: 5px solid cyan;
+        padding: 20px;
+        margin: 20px;
+        border-left: 2px solid white;
+       
+    }
+    .courses-intro-content h1{
+        font-size: 35px;
+        -webkit-text-stroke-width: 1px;
+        
+    }
+
+    .courses-intro-content p{
+        padding: 10px;
+        
+    }
+
+    
+}
+
+@keyframes project-animation {
+
+    0%{
+        transform: rotate(-5deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+    
+    
+}
+
+@keyframes courses-intro-animation {
+
+    0%{
+        transform: rotate(-5deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+    
+    
+}
